@@ -25,3 +25,21 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer components {
+  .heading-1 {
+    @apply font-chakra text-5xl font-bold text-neutral-dark leading-tight text-center;
+  }
+  .heading-2 {
+    @apply font-chakra text-4xl font-semibold text-neutral-dark leading-snug text-center;
+  }
+  .heading-3 {
+    @apply font-chakra text-2xl font-semibold text-neutral-dark leading-snug text-left;
+  }
+  .paragraph {
+    @apply font-sans text-base text-neutral-gray leading-relaxed text-left;
+  }
+  .link {
+    @apply font-sans text-sm text-primary underline hover:text-primary-soft transition-colors;
+  }
+}
