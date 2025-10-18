@@ -1,11 +1,11 @@
 import { HTMLAttributes } from "react";
 
-export const Heading1 = ({
+export const Paragraph = ({
   className,
   ...props
-}: HTMLAttributes<HTMLHeadingElement>) => {
+}: HTMLAttributes<HTMLParagraphElement>) => {
   return (
-    <h1
+    <p
       className={
         "scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance" +
         " " +
