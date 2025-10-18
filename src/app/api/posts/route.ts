@@ -1,8 +1,5 @@
-import { Post } from "./interfaces";
-import { headers as Headers } from "next/headers";
-
-export async function GET(request: Request) {
-  const posts = await fetch(`${process.env.API_URL}/posts}`).then((res) =>
+export async function GET() {
+  const posts = await fetch(`${process.env.API_URL}/posts`).then((res) =>
     res.json()
   );
 
