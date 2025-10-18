@@ -1,13 +1,11 @@
-import { HTMLAttributes } from "react";
-
 export const Heading2 = ({
   className,
   ...props
-}: HTMLAttributes<HTMLHeadingElement>) => {
+}: React.HTMLAttributes<HTMLHeadingElement>) => {
   return (
     <h2
       className={
-        "scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance" +
+        "font-chakra text-4xl font-semibold text-neutral-dark leading-snug text-center" +
         " " +
         className
       }

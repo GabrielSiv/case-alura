@@ -7,7 +7,7 @@ export const LinkText = ({
   return (
     <a
       className={
-        "underline text-blue-600 hover:text-blue-800 visited:text-purple-600" +
+        "font-sans text-sm text-primary underline hover:text-primary-soft transition-colors" +
         " " +
         className
       }
