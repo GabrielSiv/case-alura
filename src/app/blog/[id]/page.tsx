@@ -103,22 +103,24 @@ export default async function Blog({ params }: BlogPageProps) {
         aria-label="Postagens relacionadas"
       >
         <h2 className="heading-3">Postagens relacionadas</h2>
-        <div
+        <ul
           className="flex flex-col lg:flex-row gap-6 justify-center items-center"
+          aria-labelledby="cards-list"
           role="list"
         >
           {data?.relateds &&
             data.relateds.map((post) => (
-              <Card
-                title={post.title}
-                category={post.category.name}
-                description={post.content}
-                href={`/blog/${post.id}`}
-                imageUrl={post.imageUrl}
-                key={post.id}
-              />
+              <li key={post.id}>
+                <Card
+                  title={post.title}
+                  category={post.category.name}
+                  description={post.content}
+                  href={`/blog/${post.id}`}
+                  imageUrl={post.imageUrl}
+                />
+              </li>
             ))}
-        </div>
+        </ul>
       </section>
     </main>
   );
