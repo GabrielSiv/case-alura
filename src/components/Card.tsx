@@ -40,7 +40,7 @@ export function Card({
       </div>
       <CardHeader className="px-6 pt-4 pb-2 gap-3">
         <CardTitle>
-          <h3 className="font-chakra text-xl font-bold text-neutral-dark text-left leading-snug">
+          <h3 className="font-chakra text-xl font-bold text-foreground text-left leading-snug">
             {title}
           </h3>
         </CardTitle>
