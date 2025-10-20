@@ -10,7 +10,7 @@ const navItem = cva(
     variants: {
       active: {
         true: "text-primary-soft",
-        false: "text-primary",
+        false: "text-foreground",
       },
     },
   }

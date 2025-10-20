@@ -45,7 +45,13 @@ export default async function Home({ searchParams }: ServerProps) {
           </div>
           {posts.length > 0 && <Categories posts={posts} />}
         </div>
-        <Suspense fallback={<div>Cargando...</div>}>
+        <Suspense
+          fallback={
+            <div>
+              <p className="heading-1">Carregando...</p>
+            </div>
+          }
+        >
           <div className="flex flex-col gap-12">
             <div className="flex flex-col justify-center sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
               {posts.length ? (
